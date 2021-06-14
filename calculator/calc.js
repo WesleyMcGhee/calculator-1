@@ -21,9 +21,16 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(num1 * num2);
 	}else if (mathSymbol === "/"){
 		console.log(num1 / num2);
-		
 	}else if (mathSymbol === "√" || mathSymbol === "sqrt"){
 		console.log(Math.sqrt(num1));
+	}else if (mathSymbol === "%"){
+		console.log(num1 % num2);
+	}else if (mathSymbol === "^2" || mathSymbol === "square"){
+		console.log(Math.pow(num1, 2));
+	}else if (mathSymbol === "^3" || mathSymbol === "cube"){
+		console.log(Math.pow(num1, 3));
+	}else if (mathSymbol === "^"){
+		console.log(Math.pow(num1, num2));
 	}
 	
 	// This line closes the connection to the command line interface.
